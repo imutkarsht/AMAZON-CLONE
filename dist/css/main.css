@@ -39,6 +39,10 @@ a {
   color: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 nav {
   background: #131921;
   padding: 10px 20px;
@@ -254,6 +258,21 @@ nav {
 
 .striketext {
   text-decoration: line-through;
+}
+
+.back-to-top {
+  background: #232f32;
+  color: #fff;
+  font-size: 13px;
+  border: none;
+  width: 100%;
+  padding: 15px 0;
+  transition: all 0.3s ease-in;
+}
+
+.back-to-top:hover {
+  cursor: pointer;
+  background-color: #323d40;
 }
 
 footer {

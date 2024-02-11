@@ -1,7 +1,10 @@
-const scrollContainer = document.querySelectorAll('.products');
-for(const item of scrollContainer){
-    item.addEventListener('wheel', (evt)=>{
-        evt.preventDefault();
-        item.scrollLeft += evt.deltaY;
-    })
-}
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.addEventListener('wheel', function(evt) {
+        const productsContainer = evt.target.closest('.products');
+        
+        if (productsContainer) {
+            evt.preventDefault();
+            productsContainer.scrollLeft += evt.deltaY;
+        }
+    });
+});
