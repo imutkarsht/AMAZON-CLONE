@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body{
+    background: $primary-body-color;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
